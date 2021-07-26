@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    padding: 40px;
+    background-color: var(--lightGray);
+}
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --darkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --lightGray: hsl(0, 0%, 98%);
+    --box-shadow-color: hsla(210, 34%, 89%, 0.7);
+}
+.header-container{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.head-1{
+    font-family: 'Poppins';
+    font-weight: 200;
+    color: var(--darkBlue);
+    font-size: 2rem;
+}
+.head-2{
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: var(--darkBlue);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.txt{
+    font-family: 'Poppins';
+    font-weight: 200;
+    color: var(--grayishBlue);
+    font-size: 1rem;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    margin: 40px 0px;
+}
+.card{
+    background: white;
+    padding: 25px 20px;
+    border: 0 solid;
+    border-top-width: 5px;
+    border-radius: 0.6rem;
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    box-shadow: 0 1.3rem 1.5rem 0 var(--box-shadow-color);
+}
+.card-txt-cont{
+    margin-bottom: 1.5rem;
+}
+.card-head h2{
+    font-weight: 600;
+    color: var(--darkBlue);
+    font-size: 1.5rem;
+}
+.card-text p{
+    font-weight: 200;
+    color: var(--darkBlue);
+    font-size: 1rem;
+    margin-top: 8px;
+}
+.card-icon{
+    display: flex;
+    justify-content: flex-end;
+}
+.card-icon img{
+    width: 60px;
+    height: 60px;
+}
+.card-3{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.card-1, .card-4{
+    position: relative;
+    top: 50%
+}
+.card-1{
+    border-top-color: var(--cyan);
+}
+.card-2{
+    border-top-color: var(--red);
+}
+.card-3{
+    border-top-color: var(--orange);
+}
+.card-4{
+    border-top-color: var(--blue);
+}
+@media screen and (max-width:1000px){
+    body{
+        max-width: 90vw;
+    }
+    .card-container{
+        display: block;
+    }
+    .card{
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width:700px){
+    body{
+        max-width: 90vw;
+    }
+    .card-container{
+        display: block;
+    }
+    .head-1,.head-2{
+        font-size: 1.5rem;
+    }
+    .card{
+        margin-bottom: 3rem;
+    }
+}
