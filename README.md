@@ -23,8 +23,8 @@ This is great project for practicing grid layout and also it will teach you that
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/abno-24/Four-Card-Feature)
+- Live Site URL: [Github Pages](https://abno-24.github.io/Four-Card-Feature/)
 
 ## My process
 
